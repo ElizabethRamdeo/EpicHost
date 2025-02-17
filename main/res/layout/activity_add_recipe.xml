@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AddRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txvAddRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a Recipe"
+            android:textSize="24sp"
+            android:textColor="@color/pumpkin"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="24dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+            <TextView
+                android:id="@+id/txvAddRecipeNameLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Recipe Name: "/>
+            <EditText
+                android:id="@+id/etAddRecipeName"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:hint="Recipe Name"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+            <TextView
+                android:id="@+id/txvAddRecipeDescriptionLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Recipe Description: "/>
+            <EditText
+                android:id="@+id/etAddRecipeDescription"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:hint="Recipe Description"
+                android:inputType="text"/>
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spinnerAddRecipeCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+            <TextView
+                android:id="@+id/txvAddRecipeYieldLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Recipe Yield: "/>
+            <EditText
+                android:id="@+id/etAddRecipeYield"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:hint="Yield"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+            <TextView
+                android:id="@+id/txvAddRecipeImageURLLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Recipe Url: "/>
+            <EditText
+                android:id="@+id/etAddRecipeImageURL"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:hint="https://..."
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+            <TextView
+                android:id="@+id/txvAddRecipeHealthLabelsLabel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Health Labels: "/>
+            <EditText
+                android:id="@+id/etAddRecipeHealthLabels"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:hint="Add health labels separated by commas"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txvAddRecipeIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Recipe Ingredients: "/>
+        <EditText
+            android:id="@+id/etAddRecipeIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add ingredients, separated by a comma"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/txvAddRecipeDirectionsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Recipe Directions: "/>
+        <EditText
+            android:id="@+id/etAddRecipeDirections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add directions, separated by a comma"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/txvAddRecipeGroceryListLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Grocery List: "/>
+        <EditText
+            android:id="@+id/etAddRecipeGroceryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add grocery list items, separated by a comma"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnAdminSubmitAndAddRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="@color/yellowOrange"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkRed">#FF930717</color>
+    <color name="mutedRed">#FF90171F</color>
+    <color name="green">#FF5A7C00</color>
+    <color name="citron">#FF9FAA13</color>
+    <color name="pumpkin">#FFfd7818</color>
+    <color name="goldenrod">#FFD3A923</color>
+    <color name="yellowOrange">#FFFFAE42</color>
+    <color name="earthBrown">#FF673c24</color>
+</resources>
